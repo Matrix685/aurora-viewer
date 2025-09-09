@@ -101,7 +101,7 @@ const anchor = document.getElementById("anchor");
 // });
 
 async function getData() {
-    const url = "http://localhost:8080/data";
+    const url = "http://localhost:8080/image";
     try {
         const response = await fetch(url);
 
