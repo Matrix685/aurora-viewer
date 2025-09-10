@@ -1,59 +1,63 @@
-const express = require("express");
 const fs = require("fs");
-const request = require("request");
-const cors = require("cors");
+const https = require("https");
 
-const app = express();
-const port = 8080;
+const url = "https://comicaurora.com/";
 
-app.use(cors());
-
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/website/index.html");
-});
-
-function download(uri, filename, callback) {
-    request.head(uri, function (err, res, body) {
-        // console.log("content-type:", res.headers["content-type"]);
-        // console.log("content-length:", res.headers["content-length"]);
-
-        request(uri).pipe(fs.createWriteStream(filename)).on("close", callback);
+const request = https.request(url, (response) => {
+    let data = "";
+    response.on("data", (chunk) => {
+        data += chunk.toString();
     });
-}
 
-download("https://upload.wikimedia.org/wikipedia/en/d/db/Undertale_Combat_Example.png", "undertale.png", function () {
-    console.log("done");
-});
-// fetch("https://comicaurora.com/wp-content/uploads/2025/06/CH5_031_snap.png")
-// fetch("https://upload.wikimedia.org/wikipedia/en/d/db/Undertale_Combat_Example.png")
-//     .then((response) => response.blob())
-//     .then((blob) => {
-//         // res.type(blob.type);
-//         // blob.arrayBuffer().then((buf) => {
-//         //     res.send(Buffer.from(buf));
-//         // });
+    response.on("end", async function () {
+        // const body = JSON.parse(data);
+        // console.log(body);
 
-//         console.log(blob.type);
+        const lines = data.split("\n");
+        let imageEl;
 
-//         // const content = JSON.stringify(blob);
+        for (const line of lines) {
+            if (line.includes('<div id="mgsisk_webcomic_collection_widget_webcomicmedia-5"')) {
+                imageEl = line;
+                break;
+            }
+        }
 
-//         // fs.writeFile(__dirname + "/blobby.json", content, (err) => {
-//         //     if (err) {
-//         //         console.error(err);
-//         //     }
-//         // });
-//     });
-
-app.get("/image", (req, res) => {
-    fetch("https://upload.wikimedia.org/wikipedia/en/d/db/Undertale_Combat_Example.png")
-        .then((response) => response.blob())
-        .then((blob) => {
-            console.log(blob.type);
-
-            res.send(blob.type);
+        // await pipeline(imageEl, file);
+        fs.writeFile("aurora.html", imageEl, (err) => {
+            if (err) {
+                console.error(`Error writing file: ${err}`);
+            } else {
+                console.log("File written successfully");
+            }
         });
+    });
 });
 
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+request.on("error", (error) => {
+    console.log("An error", error);
 });
+
+request.end();
+
+// const imageUrl = "https://undertale.com/assets/images/stickers3.png";
+
+function downloadImage(imageUrl) {
+    const imageName = "images/sans.png";
+
+    const file = fs.createWriteStream(imageName);
+
+    https
+        .get(imageUrl, (response) => {
+            response.pipe(file);
+
+            file.on("finish", () => {
+                file.close();
+                console.log(`Image downloaded as ${imageName}`);
+            });
+        })
+        .on("error", (err) => {
+            fs.unlink(imageName);
+            console.error(`Error downloading image: ${err.message}`);
+        });
+}
