@@ -1,6 +1,7 @@
 const fs = require("fs");
 const https = require("https");
 const Readable = require("stream").Readable;
+const shell = require("shelljs");
 
 const url = "https://comicaurora.com/";
 let imageUrl;
@@ -14,7 +15,7 @@ const request = https.request(url, (response) => {
         data += chunk;
     });
 
-    response.on("end", async function () {
+    response.on("end", function () {
         const lines = data.split("\n");
 
         for (const line of lines) {
@@ -63,10 +64,18 @@ function downloadImage(imageUrl) {
             file.on("finish", () => {
                 file.close();
                 console.log(`Image downloaded as ${imageName}`);
+
+                commit();
             });
         })
         .on("error", (err) => {
             fs.unlink(imageName);
             console.error(`Error downloading image: ${err.message}`);
         });
+}
+
+function commit() {
+    shell.exec("update.sh");
+
+    console.log("all done!");
 }
