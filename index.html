@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://comicaurora.com/wp-content/themes/comicpress-child/style.css" type="text/css" media="screen" />
+	<link rel="pingback" href="https://comicaurora.com/xmlrpc.php" />
+	<meta name="ComicPress" content="4.4" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<title>Aurora - A fantasy webcomic. Updates M-W-F.</title>
+	<meta name="description" content="A fantasy webcomic. Updates M-W-F." />
+	<link rel="canonical" href="https://comicaurora.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Aurora" />
+	<meta property="og:description" content="A fantasy webcomic." />
+	<meta property="og:url" content="https://comicaurora.com/" />
+	<meta property="og:site_name" content="Aurora" />
+	<meta property="og:image" content="https://comicaurora.com/wp-content/uploads/2019/04/logo-progress.png" />
+	<meta property="og:image:width" content="160" />
+	<meta property="og:image:height" content="120" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://comicaurora.com/","url":"https://comicaurora.com/","name":"Aurora - A fantasy webcomic. Updates M-W-F.","isPartOf":{"@id":"https://comicaurora.com/#website"},"description":"A fantasy webcomic. Updates M-W-F.","breadcrumb":{"@id":"https://comicaurora.com/#breadcrumb"},"inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://comicaurora.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://comicaurora.com/#website","url":"https://comicaurora.com/","name":"Aurora","description":"A fantasy webcomic. Updates M-W-F.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://comicaurora.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+
+
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Aurora &raquo; Feed" href="https://comicaurora.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Aurora &raquo; Comments Feed" href="https://comicaurora.com/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.8.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-3JHSLDMGT6"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '9.8.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/comicaurora.com\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-3JHSLDMGT6',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-3JHSLDMGT6', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+			
+							<!-- / Google Analytics by MonsterInsights -->
+		<script type="c21271b6d1f7f34869e5eabd-text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/comicaurora.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://comicaurora.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--artifika: Artifika;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-artifika-font-family{font-family: var(--wp--preset--font-family--artifika) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://comicaurora.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='https://comicaurora.com/wp-content/themes/comicpress/style.css?ver=6.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css' href='https://comicaurora.com/wp-content/themes/comicpress-child/style.css?ver=1.0.0' type='text/css' media='all' />
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=9.8.0" id="monsterinsights-frontend-script-js" async="async" data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/comicaurora.com","hash_tracking":"false","v4_id":"G-3JHSLDMGT6"};/* ]]> */
+</script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/themes/comicpress/js/ddsmoothmenu.js?ver=6.8.2" id="ddsmoothmenu_js-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/themes/comicpress/js/menubar.js?ver=6.8.2" id="menubar_js-js"></script>
+<link rel="https://api.w.org/" href="https://comicaurora.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://comicaurora.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.2" />
+<!--Customizer CSS-->
+<style type="text/css">
+	#page, #page-wide { width: 1020px!important; max-width: 100%!important; }
+	#header, #menubar-wrapper, #breadcrumb-wrapper, #subcontent-wrapper, #footer, #footer-sidebar-wrapper { width: 980px; max-width: 980px; }
+	#comic-wrap { max-width: 100%; }
+	#add-width { width: 0px; }
+	#content-column { width: 980px; max-width: 100%; }
+	#sidebar-right { width: 204px; }
+	#sidebar-left { width: 204px; }
+	.copyright-info { color: #52dd23!important; }
+	.header-info { display: inline-block; float: left; padding: 0; }
+	.header-info h1 { margin: 0; padding: 0; background: url("https://comicaurora.com/wp-content/uploads/2019/12/logo-BIG.png") top left no-repeat; background-size: contain; display: cover; }
+	.header-info h1 a { padding: 0; margin: 0; height: 120px; width: 180px; text-indent: -9999px; white-space: nowrap; overflow: hidden; display: block;}
+	.header-info .description { display: none!important; }
+</style>
+<!--/Customizer CSS-->
+      <style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #0a0002; background-image: url("https://comicaurora.com/wp-content/uploads/2019/04/bg-aurora.png"); background-position: center top; background-size: cover; background-repeat: no-repeat; background-attachment: scroll; }
+</style>
+	<link rel="icon" href="https://comicaurora.com/wp-content/uploads/2019/04/cropped-icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://comicaurora.com/wp-content/uploads/2019/04/cropped-icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://comicaurora.com/wp-content/uploads/2019/04/cropped-icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://comicaurora.com/wp-content/uploads/2019/04/cropped-icon-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.webcomic-media{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.webcomic-media img{height:auto;max-width:100%}.webcomic-navigation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.webcomic-navigation a{display:block;font-size:200%}.webcomic-navigation img{height:auto;max-width:100%}.webcomic-navigation .widget{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;list-style:none}.webcomic-navigation .current-webcomic{visibility:hidden}.webcomic-meta img{height:auto;max-width:100%}.webcomic-meta span:after{content:", "}.webcomic-meta span:last-child:after{content:""}.webcomic-meta .widget{list-style:none;margin:0 0 15px}.webcomic-infinite{clear:both}.webcomic-infinite img{height:auto;max-width:100%}.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before {
+display: none;
+}		</style>
+		<style id="sccss">/* Enter Your Custom CSS Here */
+
+/*changes the top border image to the vines/forest design*/
+body.scheme-high #page-wrap {
+    background: url('https://comicaurora.com/wp-content/uploads/2019/04/header-wrap-small-alt.png') top repeat-x;
+}
+
+body.scheme-high #comment-wrapper {
+    opacity: 0.5;
+}
+
+/*modifies the color of the links in the menu*/
+body.scheme-high .menu ul li a:link, body.scheme-high .menu ul li a:visited, body.scheme-high .menunav a:link, body.scheme-high .menunav a:visited {
+    color: #FFFFFF;
+}
+
+
+/*changes the webcomic container div*/
+div.widget-area.webcomic-media {
+    border: 5px solid white;
+	  background-color: #222222;
+}
+
+div.menu
+{
+		background-color: rgba(0, 100, 0, 0.8);
+		border-radius: 3px;
+}
+
+div.webcomic-navigation {
+  height: 40px;
+}
+
+div.webcomic-navigation img {
+  max-height: 30px;
+  width: auto;
+  padding: 5px;
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+/*this tool allows objects to wiggle around when called with "animation: shake 0.5s"*/
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*animates the nav buttons on hover*/
+div.webcomic-navigation img:hover {
+  transform: scale(1.1);
+  /*animation: shake 0.5s;*/
+}
+
+/* fixes the broken links in captions */
+figcaption a {
+		text-decoration: underline;
+		display: inline !important;
+}</style>	<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+		/* Cached: September 9, 2025 at 8:02pm */
+/* latin */
+@font-face {
+  font-family: 'Artifika';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/artifika/v21/VEMyRoxzronptCuxu5Wq7DE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+--font-base: Artifika;
+}
+body, #content, .entry-content, .post-content, .page-content, .post-excerpt, .entry-summary, .entry-excerpt, .widget-area, .widget, .sidebar, #sidebar, footer, .footer, #footer, .site-footer {
+font-family: "Artifika";
+ }
+	</style>
+	<!-- Fonts Plugin CSS -->
+	</head>
+
+<body class="home blog custom-background wp-theme-comicpress wp-child-theme-comicpress-child webcomic-integrate webcomic-integrate-comiceasel user-guest gecko is-mobile pm day wed layout-ncl scheme-high">
+<div id="page-wrap">
+	<div id="page">
+		<header id="header">
+			<div class="header-info">
+				<h1><a href="https://comicaurora.com">Aurora</a></h1>
+				<div class="description">A fantasy webcomic. Updates M-W-F.</div>
+			</div>
+						<div class="clear"></div>
+		</header>
+
+		<div id="menubar-wrapper">
+			<div class="menu-container">
+								<div class="menu"><ul id="menu-menubar" class="menu"><li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="https://comicaurora.com/about/">About/User Guide</a></li>
+<li id="menu-item-4783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4783"><a href="https://comicaurora.com/books/">📚✨Order The Books!✨📚</a></li>
+<li id="menu-item-156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-156"><a href="https://comicaurora.com/archive/">Archive</a></li>
+<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="https://comicaurora.com/characters/">Characters</a></li>
+<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-158"><a href="https://comicaurora.com/extra-lore/">Extra Lore</a>
+<ul class="sub-menu">
+	<li id="menu-item-2243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2243"><a href="https://comicaurora.com/world-map/">World Map</a></li>
+	<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="https://comicaurora.com/extra-lore/the-six-primordials/">The Six Primordials</a></li>
+	<li id="menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454"><a href="https://comicaurora.com/the-three-elder-races/">The Three Elder Races</a></li>
+	<li id="menu-item-350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-350"><a href="https://comicaurora.com/the-chimeric-plague/">The Chimeric Plague</a></li>
+	<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-357"><a href="https://comicaurora.com/the-theoretical-seventh-element/">The Seventh Element</a></li>
+	<li id="menu-item-591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-591"><a href="https://comicaurora.com/the-storm/">The Storm</a></li>
+	<li id="menu-item-661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-661"><a href="https://comicaurora.com/gods-and-sentinels/">Gods and Sentinels</a></li>
+	<li id="menu-item-943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="https://comicaurora.com/the-twins/">The Twins</a></li>
+	<li id="menu-item-984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-984"><a href="https://comicaurora.com/vashs-sword/">Vash&#8217;s Sword</a></li>
+	<li id="menu-item-1135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1135"><a href="https://comicaurora.com/magic/">Magic</a></li>
+	<li id="menu-item-1750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1750"><a href="https://comicaurora.com/ferin/">Ferin</a></li>
+	<li id="menu-item-1775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1775"><a href="https://comicaurora.com/the-calendar/">The Calendar</a></li>
+</ul>
+</li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="https://comicaurora.com/contact/">Contact</a></li>
+<li id="menu-item-2837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-2837"><a rel="privacy-policy" href="https://comicaurora.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>				<div class="menunav">
+																			</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	<div id="content-wrapper">
+	
+		
+<div class="widget-area webcomic-keyboard webcomic-gestures webcomic-navigation">
+	<div id="mgsisk_webcomic_collection_widget_firstwebcomiclink-6" class="widget widget_mgsisk_webcomic_collection_widget_firstwebcomiclink"><a href='https://comicaurora.com/aurora/0-1-1/' class='webcomic-link webcomic1-link first-webcomic-link first-webcomic1-link'><img width="200" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/arrow-blue-e1571699055192.png" class="attachment-full size-full" alt="«"async" /></a></div><div id="mgsisk_webcomic_collection_widget_previouswebcomiclink-3" class="widget widget_mgsisk_webcomic_collection_widget_previouswebcomiclink"><a href='https://comicaurora.com/aurora/2-5-31/' class='webcomic-link webcomic1-link previous-webcomic-link previous-webcomic1-link'><img width="147" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/arrow--e1571699115274.png" class="attachment-full size-full" alt="‹"async" /></a></div><div id="mgsisk_webcomic_collection_widget_randomwebcomiclink-5" class="widget widget_mgsisk_webcomic_collection_widget_randomwebcomiclink"><a href='https://comicaurora.com/aurora/1-2-5/' class='webcomic-link webcomic1-link random-webcomic-link random-webcomic1-link'><img width="250" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/random-e1571699137392.png" class="attachment-full size-full" alt="???"async" fetchpriority="high" /></a></div><div id="mgsisk_webcomic_collection_widget_nextwebcomiclink-4" class="widget widget_mgsisk_webcomic_collection_widget_nextwebcomiclink"><a href='https://comicaurora.com/aurora/2-5-32/' class='webcomic-link webcomic1-link next-webcomic-link next-webcomic1-link current-webcomic current-webcomic1'><img width="147" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/arrow-1-1-e1571699098139.png" class="attachment-full size-full" alt="›"async" /></a></div><div id="mgsisk_webcomic_collection_widget_lastwebcomiclink-3" class="widget widget_mgsisk_webcomic_collection_widget_lastwebcomiclink"><a href='https://comicaurora.com/aurora/2-5-32/' class='webcomic-link webcomic1-link last-webcomic-link last-webcomic1-link current-webcomic current-webcomic1'><img width="200" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/arrow-1-2-e1571699075864.png" class="attachment-full size-full" alt="»"async" /></a></div></div>
+
+<div class="widget-area webcomic-media">
+	<div id="mgsisk_webcomic_collection_widget_webcomicmedia-5" class="widget widget_mgsisk_webcomic_collection_widget_webcomicmedia"><a href='https://comicaurora.com/aurora/2-5-32/' class='webcomic-link webcomic1-link next-webcomic-link next-webcomic1-link current-webcomic current-webcomic1'><img width="2000" height="2829" src="images/current-page.png" class="attachment-full size-full" alt="" decoding="async" srcset="images/current-page.png 2000w, https://comicaurora.com/wp-content/uploads/2025/06/CH5_032_hurt-212x300.png 212w, https://comicaurora.com/wp-content/uploads/2025/06/CH5_032_hurt-724x1024.png 724w, https://comicaurora.com/wp-content/uploads/2025/06/CH5_032_hurt-106x150.png 106w, https://comicaurora.com/wp-content/uploads/2025/06/CH5_032_hurt-768x1086.png 768w, https://comicaurora.com/wp-content/uploads/2025/06/CH5_032_hurt-1086x1536.png 1086w" sizes="(max-width: 2000px) 100vw, 2000px" title="in THIS comic? good luck with that buddy" /></a></div></div>
+
+<div class="widget-area webcomic-keyboard webcomic-gestures webcomic-navigation">
+	<div id="mgsisk_webcomic_collection_widget_firstwebcomiclink-6" class="widget widget_mgsisk_webcomic_collection_widget_firstwebcomiclink"><a href='https://comicaurora.com/aurora/0-1-1/' class='webcomic-link webcomic1-link first-webcomic-link first-webcomic1-link'><img width="200" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/arrow-blue-e1571699055192.png" class="attachment-full size-full" alt="«"async" /></a></div><div id="mgsisk_webcomic_collection_widget_previouswebcomiclink-3" class="widget widget_mgsisk_webcomic_collection_widget_previouswebcomiclink"><a href='https://comicaurora.com/aurora/2-5-31/' class='webcomic-link webcomic1-link previous-webcomic-link previous-webcomic1-link'><img width="147" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/arrow--e1571699115274.png" class="attachment-full size-full" alt="‹"async" /></a></div><div id="mgsisk_webcomic_collection_widget_randomwebcomiclink-5" class="widget widget_mgsisk_webcomic_collection_widget_randomwebcomiclink"><a href='https://comicaurora.com/aurora/1-8-10/' class='webcomic-link webcomic1-link random-webcomic-link random-webcomic1-link'><img width="250" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/random-e1571699137392.png" class="attachment-full size-full" alt="???"async" /></a></div><div id="mgsisk_webcomic_collection_widget_nextwebcomiclink-4" class="widget widget_mgsisk_webcomic_collection_widget_nextwebcomiclink"><a href='https://comicaurora.com/aurora/2-5-32/' class='webcomic-link webcomic1-link next-webcomic-link next-webcomic1-link current-webcomic current-webcomic1'><img width="147" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/arrow-1-1-e1571699098139.png" class="attachment-full size-full" alt="›"async" /></a></div><div id="mgsisk_webcomic_collection_widget_lastwebcomiclink-3" class="widget widget_mgsisk_webcomic_collection_widget_lastwebcomiclink"><a href='https://comicaurora.com/aurora/2-5-32/' class='webcomic-link webcomic1-link last-webcomic-link last-webcomic1-link current-webcomic current-webcomic1'><img width="200" height="244" src="https://comicaurora.com/wp-content/uploads/2019/04/arrow-1-2-e1571699075864.png" class="attachment-full size-full" alt="»"async" /></a></div></div>
+	
+	<div id="subcontent-wrapper">
+		<div id="content-column">
+			<div id="content" class="narrowcolumn">		
+								<article id="post-4971" class="post-4971 webcomic1 type-webcomic1 status-publish hentry webcomic1_storyline-chapter-5-arc-2 webcomic-media-1 uentry postonpage-1 odd post-author-admin">
+	<div class="post-content">
+				<div class="post-info">
+			<h2 class="post-title"><a href="https://comicaurora.com/aurora/2-5-32/">2.5.32</a></h2>
+			<div class="post-text">
+				<span class="post-author">by <a href="https://comicaurora.com/author/admin/" rel="author">Red</a></span>
+<span class="posted-on">on&nbsp;</span><span class="post-date">September 10, 2025</span>
+<span class="posted-at">at&nbsp;</span><span class="post-time">3:00 am</span>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<div class="entry">
+			<p>onwards to adventure! wait that&#8217;s not the vibe here my bad</p>
+			<div class="clear"></div>
+		</div>
+		<div class="post-extras">
+			<div class="post-tags"></div>
+			<div class="comment-link">
+				<a href="https://comicaurora.com/aurora/2-5-32/#comments"><span class="comment-balloon">26</span> Comments</a>			</div>
+						<div class="clear"></div>
+		</div>
+			</div>
+</article>
+<div id="comment-wrapper">
+	<div class="commentsrsslink"><a href="https://comicaurora.com/aurora/2-5-32/feed/">Comments RSS</a></div>
+	<h4 id="comments">Discussion (26) &not;</h4>
+		<ol class="commentlist">
+			<li id="comment-96024" class="comment even thread-even depth-1">
+	
+		<div class="comment-avatar"><img title="Zer0 W0lf" alt='' src='https://secure.gravatar.com/avatar/a596796a5b1fa4c1aba3d2f8b4c5f0c4e70355e83a0a679a4c94999f7878ce04?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/a596796a5b1fa4c1aba3d2f8b4c5f0c4e70355e83a0a679a4c94999f7878ce04?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Zer0 W0lf</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 3:03am">
+					September 10, 2025, 3:03 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96024" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96024#respond" data-commentid="96024" data-postid="4971" data-belowelement="comment-96024" data-respondelement="respond" data-replyto="Reply to Zer0 W0lf" aria-label="Reply to Zer0 W0lf">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>For mobile readers.<br />
+Alt-text: in THIS comic? good luck with that buddy<br />
+Image source: hurt</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96046" class="comment odd alt depth-2">
+	
+		<div class="comment-avatar"><img title="Goose" alt='' src='https://secure.gravatar.com/avatar/f76286b52686d74490c1d069c8a29eb916d06f513f265051f7c8a617c4b3e74c?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f76286b52686d74490c1d069c8a29eb916d06f513f265051f7c8a617c4b3e74c?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Goose</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 8:21am">
+					September 10, 2025, 8:21 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96046" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96046#respond" data-commentid="96046" data-postid="4971" data-belowelement="comment-96046" data-respondelement="respond" data-replyto="Reply to Goose" aria-label="Reply to Goose">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Tumblr text: weighing the options<br />
+Bluesky text:this plan seems fine and good</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li></ul><!-- .children -->
+</li>	<li id="comment-96025" class="comment even thread-odd thread-alt depth-1">
+	
+		<div class="comment-avatar"><img title="Rai626" alt='' src='https://secure.gravatar.com/avatar/593516b0f31b3d4b8e0e81bc7ab77bb5fd7111daa70d4e0f04580d51c095af23?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/593516b0f31b3d4b8e0e81bc7ab77bb5fd7111daa70d4e0f04580d51c095af23?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Rai626</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 3:09am">
+					September 10, 2025, 3:09 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96025" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96025#respond" data-commentid="96025" data-postid="4971" data-belowelement="comment-96025" data-respondelement="respond" data-replyto="Reply to Rai626" aria-label="Reply to Rai626">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>I&#8217;m getting bad vibes here, like there&#8217;s something they don&#8217;t know yet&#8230; what did Selach mean to say?</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96051" class="comment odd alt depth-2">
+	
+		<div class="comment-avatar"><img title="Christopher" alt='' src='https://secure.gravatar.com/avatar/e1726d740524cce1deb154786f192c3b0a78884a9f394ec30a8f173d75888777?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e1726d740524cce1deb154786f192c3b0a78884a9f394ec30a8f173d75888777?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Christopher</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 9:46am">
+					September 10, 2025, 9:46 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96051" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96051#respond" data-commentid="96051" data-postid="4971" data-belowelement="comment-96051" data-respondelement="respond" data-replyto="Reply to Christopher" aria-label="Reply to Christopher">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>I think that is just genuine worry about Alinuas wellbeing.</p>
+<p>Underwater, nobody can see you cry.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li></ul><!-- .children -->
+</li>	<li id="comment-96026" class="comment even thread-even depth-1">
+	
+		<div class="comment-avatar"><img title="depleted" alt='' src='https://secure.gravatar.com/avatar/6edc5c5451d54f01e6a679b3410d89fe78f579805654ee591c627a95d43373f8?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6edc5c5451d54f01e6a679b3410d89fe78f579805654ee591c627a95d43373f8?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>depleted</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 3:16am">
+					September 10, 2025, 3:16 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96026" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96026#respond" data-commentid="96026" data-postid="4971" data-belowelement="comment-96026" data-respondelement="respond" data-replyto="Reply to depleted" aria-label="Reply to depleted">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>As dubious as it is for a military captain to be taking the initiative to kill (the embodiment of) a god, at least she&#8217;s being efficient about it.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96028" class="comment odd alt depth-2">
+	
+		<div class="comment-avatar"><img title="EffyisBiblos" alt='' src='https://secure.gravatar.com/avatar/4366523b2354687482ac694eb20c9f1ae7147979b431ffff5cb7cf89a1e6a6c2?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/4366523b2354687482ac694eb20c9f1ae7147979b431ffff5cb7cf89a1e6a6c2?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>EffyisBiblos</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 3:42am">
+					September 10, 2025, 3:42 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96028" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96028#respond" data-commentid="96028" data-postid="4971" data-belowelement="comment-96028" data-respondelement="respond" data-replyto="Reply to EffyisBiblos" aria-label="Reply to EffyisBiblos">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>If Alinua&#8217;s theory is correct (which still hasn&#8217;t been really proven or disproven to be fair), the Northern Wyrm god is not present in this incarnation currently, at which point it&#8217;s really just a big sea monster, the slaying of which, I would think, is Valia&#8217;s bread and butter.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96034" class="comment even depth-3">
+	
+		<div class="comment-avatar"><img title="DadyCoool" alt='' src='https://secure.gravatar.com/avatar/1cc8a5b8fe9fb43aec2ad2f9818f9a73eab21f47c5867d77e4a29ceb8ac9d879?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1cc8a5b8fe9fb43aec2ad2f9818f9a73eab21f47c5867d77e4a29ceb8ac9d879?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>DadyCoool</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 5:54am">
+					September 10, 2025, 5:54 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96034" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96034#respond" data-commentid="96034" data-postid="4971" data-belowelement="comment-96034" data-respondelement="respond" data-replyto="Reply to DadyCoool" aria-label="Reply to DadyCoool">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>And even if she is in there, she&#8217;s most likely suffering due to her new, mutated form, making this a mercy.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li></ul><!-- .children -->
+</li></ul><!-- .children -->
+</li>	<li id="comment-96027" class="comment odd alt thread-odd thread-alt depth-1">
+	
+		<div class="comment-avatar"><img title="Rocket20" alt='' src='https://secure.gravatar.com/avatar/9fbf20a62a3c717add04d31fab25613ce1d5551956127fdca8b29cccd67c6e6a?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/9fbf20a62a3c717add04d31fab25613ce1d5551956127fdca8b29cccd67c6e6a?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Rocket20</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 3:20am">
+					September 10, 2025, 3:20 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96027" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96027#respond" data-commentid="96027" data-postid="4971" data-belowelement="comment-96027" data-respondelement="respond" data-replyto="Reply to Rocket20" aria-label="Reply to Rocket20">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Again can this be answered by womp womp? (for the fish)</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>	<li id="comment-96029" class="comment even thread-even depth-1">
+	
+		<div class="comment-avatar"><img title="AsTheLightFades" alt='' src='https://secure.gravatar.com/avatar/ca513adc090aac0f10dee39ce098df32c47fad72ebebd0b5c22ab6b8459d8455?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/ca513adc090aac0f10dee39ce098df32c47fad72ebebd0b5c22ab6b8459d8455?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>AsTheLightFades</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 4:11am">
+					September 10, 2025, 4:11 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96029" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96029#respond" data-commentid="96029" data-postid="4971" data-belowelement="comment-96029" data-respondelement="respond" data-replyto="Reply to AsTheLightFades" aria-label="Reply to AsTheLightFades">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Poor alinua 🙁</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>	<li id="comment-96031" class="comment odd alt thread-odd thread-alt depth-1 microid-mailto+http:sha1:51db98f2ee3ebca5e12620f2bd709fda0f384c18">
+	
+		<div class="comment-avatar"><a href="https://soundcloud.com/user-266269239" rel="external nofollow" title="Mat"><img title="Mat" alt='' src='https://secure.gravatar.com/avatar/1c564da68fa7165b6082d70896415a70eb09b9e289d857714cc4a8b33e750692?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1c564da68fa7165b6082d70896415a70eb09b9e289d857714cc4a8b33e750692?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></a></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite title="https://soundcloud.com/user-266269239"><a href="https://soundcloud.com/user-266269239" title="Mat" class="external nofollow">Mat</a></cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 5:28am">
+					September 10, 2025, 5:28 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96031" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96031#respond" data-commentid="96031" data-postid="4971" data-belowelement="comment-96031" data-respondelement="respond" data-replyto="Reply to Mat" aria-label="Reply to Mat">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Okay, now that Valia said it, I expect curveballs to be thrown. Alinua is a beacon to the Wyrm due to her being a Chimeric Carrier and she still doesn&#8217;t actually want to hurt anyone, including the chimera. I think she&#8217;ll need to strongarm Life into replicating what she did to Kendal, i.e. re-adapt the Northern Wyrm&#8217;s incarnation such that it can survive without the goddess or the chimeric healing factor sustaining the body. The question is whether she&#8217;ll succeed.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96043" class="comment even depth-2">
+	
+		<div class="comment-avatar"><img title="mobgabriel" alt='' src='https://secure.gravatar.com/avatar/2c20fdb26d5126a2109b9d95e81555a9565eeca4b7726a7b1509d0e99e1cdc2e?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/2c20fdb26d5126a2109b9d95e81555a9565eeca4b7726a7b1509d0e99e1cdc2e?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>mobgabriel</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 7:45am">
+					September 10, 2025, 7:45 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96043" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96043#respond" data-commentid="96043" data-postid="4971" data-belowelement="comment-96043" data-respondelement="respond" data-replyto="Reply to mobgabriel" aria-label="Reply to mobgabriel">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>it was not life that made vash&#8217;s body become kendal, life only truly connected with alinua in chapter 3 when alinua destroyed the sentinel,<br />
+healing kendal was all alinua and she doesnt know how she did it</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96053" class="comment odd alt depth-3 microid-mailto+http:sha1:3535cdad89d1cae6c78ddcd419c1e4493c7209a5">
+	
+		<div class="comment-avatar"><a href="https://soundcloud.com/user-266269239" rel="external nofollow" title="Mat"><img title="Mat" alt='' src='https://secure.gravatar.com/avatar/1c564da68fa7165b6082d70896415a70eb09b9e289d857714cc4a8b33e750692?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1c564da68fa7165b6082d70896415a70eb09b9e289d857714cc4a8b33e750692?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></a></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite title="https://soundcloud.com/user-266269239"><a href="https://soundcloud.com/user-266269239" title="Mat" class="external nofollow">Mat</a></cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 10:45am">
+					September 10, 2025, 10:45 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96053" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96053#respond" data-commentid="96053" data-postid="4971" data-belowelement="comment-96053" data-respondelement="respond" data-replyto="Reply to Mat" aria-label="Reply to Mat">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Alinua also notably lost control when she was first healed Kendal, hence why I think that Life intervened to a degree.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li></ul><!-- .children -->
+</li></ul><!-- .children -->
+</li>	<li id="comment-96032" class="comment even thread-even depth-1">
+	
+		<div class="comment-avatar"><img title="Evil Tree" alt='' src='https://secure.gravatar.com/avatar/7015ac63e42d83f84e0b3915f1041f9e29d356c5ebf78604490c275498af55f2?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/7015ac63e42d83f84e0b3915f1041f9e29d356c5ebf78604490c275498af55f2?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Evil Tree</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 5:34am">
+					September 10, 2025, 5:34 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96032" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96032#respond" data-commentid="96032" data-postid="4971" data-belowelement="comment-96032" data-respondelement="respond" data-replyto="Reply to Evil Tree" aria-label="Reply to Evil Tree">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Valia: You will be to the Wyrm as you have been to me; a pain in the neck.</p>
+<p>You can really see the genuine concern on Valia&#8217;s face in the first panel; I wonder if she regrets allowing Selach to be Alinua&#8217;s escort and not herself. She&#8217;s also shifted her tone and wording towards Alinua, away from her previous harsh lecturing to efficient, matter-of-fact planning.</p>
+<p>Panel 7 implying Alinua looking at Selach&#8217;s injury, followed by Ali&#8217;s look of resignation in panel 8 says it all. Alinua stayed to help the mer-people after she saw their injuries, now Selach is badly beaten, so Alinua has made this decision to prevent more suffering. There&#8217;s no time to investigate a possible Kendal-like situation; the Wyrm&#8217;s incarnation needs to be destroyed, here and now.</p>
+<p>Despite their rocky start and conflicting attitudes, both Alinua and Valia are united here; no matter what has become of the Northern Wyrm, or their previous friction with one another, preventing more casualties takes precedence.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>	<li id="comment-96033" class="comment odd alt thread-odd thread-alt depth-1">
+	
+		<div class="comment-avatar"><img title="OngoingConversationCouplet" alt='' src='https://secure.gravatar.com/avatar/d560f293e2f24fce80552e53b7fd10cefbf49bbd06a8aca613f8c081ee821f87?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d560f293e2f24fce80552e53b7fd10cefbf49bbd06a8aca613f8c081ee821f87?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>OngoingConversationCouplet</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 5:42am">
+					September 10, 2025, 5:42 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96033" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96033#respond" data-commentid="96033" data-postid="4971" data-belowelement="comment-96033" data-respondelement="respond" data-replyto="Reply to OngoingConversationCouplet" aria-label="Reply to OngoingConversationCouplet">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>The Wyrm is held fast, although quickly healing<br />
+Valia tells Ali how they Her fate will be sealing</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>	<li id="comment-96039" class="comment even thread-even depth-1">
+	
+		<div class="comment-avatar"><img title="ApplecrustC" alt='' src='https://secure.gravatar.com/avatar/954976db33885a6da3dc86da5bbc813324623aafe4dcb9d4273c25924cea3584?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/954976db33885a6da3dc86da5bbc813324623aafe4dcb9d4273c25924cea3584?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>ApplecrustC</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 7:03am">
+					September 10, 2025, 7:03 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96039" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96039#respond" data-commentid="96039" data-postid="4971" data-belowelement="comment-96039" data-respondelement="respond" data-replyto="Reply to ApplecrustC" aria-label="Reply to ApplecrustC">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Does it even have a spine anymore? It seems 90% mashed potatoes.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96040" class="comment odd alt depth-2">
+	
+		<div class="comment-avatar"><img title="ApplecrustC" alt='' src='https://secure.gravatar.com/avatar/954976db33885a6da3dc86da5bbc813324623aafe4dcb9d4273c25924cea3584?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/954976db33885a6da3dc86da5bbc813324623aafe4dcb9d4273c25924cea3584?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>ApplecrustC</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 7:07am">
+					September 10, 2025, 7:07 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96040" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96040#respond" data-commentid="96040" data-postid="4971" data-belowelement="comment-96040" data-respondelement="respond" data-replyto="Reply to ApplecrustC" aria-label="Reply to ApplecrustC">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Or maybe just 40%</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li></ul><!-- .children -->
+</li>	<li id="comment-96041" class="comment even thread-odd thread-alt depth-1">
+	
+		<div class="comment-avatar"><img title="ChuChulainn" alt='' src='https://secure.gravatar.com/avatar/935cebc13fc7cdcb4f7e92487dea10d6712e463e8af3eeb717c41fadf9eaf60d?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/935cebc13fc7cdcb4f7e92487dea10d6712e463e8af3eeb717c41fadf9eaf60d?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>ChuChulainn</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 7:15am">
+					September 10, 2025, 7:15 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96041" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96041#respond" data-commentid="96041" data-postid="4971" data-belowelement="comment-96041" data-respondelement="respond" data-replyto="Reply to ChuChulainn" aria-label="Reply to ChuChulainn">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Am I crazy or is there some parallels between Alinua and Kendal here with the &#8220;I don&#8217;t want anyone to get hurt&#8221; line. Besties who mirror eachothers fatal flaws together, stay together</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96044" class="comment odd alt depth-2">
+	
+		<div class="comment-avatar"><img title="ApplecrustC" alt='' src='https://secure.gravatar.com/avatar/954976db33885a6da3dc86da5bbc813324623aafe4dcb9d4273c25924cea3584?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/954976db33885a6da3dc86da5bbc813324623aafe4dcb9d4273c25924cea3584?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>ApplecrustC</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 7:45am">
+					September 10, 2025, 7:45 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96044" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96044#respond" data-commentid="96044" data-postid="4971" data-belowelement="comment-96044" data-respondelement="respond" data-replyto="Reply to ApplecrustC" aria-label="Reply to ApplecrustC">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Yeah they are the two most alike main characters. At least from my view</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>	<li id="comment-96062" class="comment even depth-2">
+	
+		<div class="comment-avatar"><img title="Mturtle7" alt='' src='https://secure.gravatar.com/avatar/336ed0bbfcc237e76fde0cb92af8c6001a42e6bc6405559be3bee09094c6a8c5?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/336ed0bbfcc237e76fde0cb92af8c6001a42e6bc6405559be3bee09094c6a8c5?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Mturtle7</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 12:00pm">
+					September 10, 2025, 12:00 pm				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96062" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96062#respond" data-commentid="96062" data-postid="4971" data-belowelement="comment-96062" data-respondelement="respond" data-replyto="Reply to Mturtle7" aria-label="Reply to Mturtle7">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>You are absolutely not crazy in seeing that! &#8220;Nobody dies because of me. Not ever.&#8221; and &#8220;I don&#8217;t want anyone getting hurt&#8221; seem like pretty explicit parallels to me!</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li></ul><!-- .children -->
+</li>	<li id="comment-96042" class="comment odd alt thread-even depth-1">
+	
+		<div class="comment-avatar"><img title="Aidansroadams" alt='' src='https://secure.gravatar.com/avatar/d0da3f5ce33b4b092fd4cfc5dc93ba6d12cbaeae4a365c069a5b8c6b88b55d17?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/d0da3f5ce33b4b092fd4cfc5dc93ba6d12cbaeae4a365c069a5b8c6b88b55d17?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Aidansroadams</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 7:40am">
+					September 10, 2025, 7:40 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96042" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96042#respond" data-commentid="96042" data-postid="4971" data-belowelement="comment-96042" data-respondelement="respond" data-replyto="Reply to Aidansroadams" aria-label="Reply to Aidansroadams">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Did you know:<br />
+The deepest a human has dove underwater is 1090ft. The decent under a half hour while the accent took over 13 hours with large amounts of specialized equipment to ensure the decompression of returning to the surface did not harm him.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96050" class="comment even depth-2">
+	
+		<div class="comment-avatar"><img title="BookwormGirlBoss" alt='' src='https://secure.gravatar.com/avatar/4bc89ce04ce8390c4e9d44b929b9da30e3435ab27893274f146d2e1108776166?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/4bc89ce04ce8390c4e9d44b929b9da30e3435ab27893274f146d2e1108776166?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>BookwormGirlBoss</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 8:57am">
+					September 10, 2025, 8:57 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96050" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96050#respond" data-commentid="96050" data-postid="4971" data-belowelement="comment-96050" data-respondelement="respond" data-replyto="Reply to BookwormGirlBoss" aria-label="Reply to BookwormGirlBoss">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>yo that&#8217;s really cool actually! I guess Alinua&#8217;s setting a new record huh?</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+<ul class="children">
+	<li id="comment-96052" class="comment odd alt depth-3">
+	
+		<div class="comment-avatar"><img title="Astraeterna" alt='' src='https://secure.gravatar.com/avatar/06e65522baed85a60a2d6bdb8554449c41205d8d99069e3bdfb630237f59bc63?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/06e65522baed85a60a2d6bdb8554449c41205d8d99069e3bdfb630237f59bc63?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Astraeterna</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 9:49am">
+					September 10, 2025, 9:49 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96052" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96052#respond" data-commentid="96052" data-postid="4971" data-belowelement="comment-96052" data-respondelement="respond" data-replyto="Reply to Astraeterna" aria-label="Reply to Astraeterna">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>i wouldn&#8217;t count it, most people don&#8217;t have the magical ability to adapt their bodies to any environment</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li></ul><!-- .children -->
+</li></ul><!-- .children -->
+</li>	<li id="comment-96045" class="comment even thread-odd thread-alt depth-1">
+	
+		<div class="comment-avatar"><img title="Steamweed" alt='' src='https://secure.gravatar.com/avatar/1ef47f5711571f2596a15f6bb2e34c8d7b643b1124d46b16700830700e989873?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1ef47f5711571f2596a15f6bb2e34c8d7b643b1124d46b16700830700e989873?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Steamweed</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 8:15am">
+					September 10, 2025, 8:15 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96045" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96045#respond" data-commentid="96045" data-postid="4971" data-belowelement="comment-96045" data-respondelement="respond" data-replyto="Reply to Steamweed" aria-label="Reply to Steamweed">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>And after this, no one else got hurt ever.  From now on, they all talked out their problems.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>	<li id="comment-96057" class="comment odd alt thread-even depth-1">
+	
+		<div class="comment-avatar"><img title="Katfeathers" alt='' src='https://secure.gravatar.com/avatar/1074a0057e6a458186fcbc7a580136cd5f04300796bac85de1538fcdcdbf2967?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1074a0057e6a458186fcbc7a580136cd5f04300796bac85de1538fcdcdbf2967?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Katfeathers</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 11:03am">
+					September 10, 2025, 11:03 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96057" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96057#respond" data-commentid="96057" data-postid="4971" data-belowelement="comment-96057" data-respondelement="respond" data-replyto="Reply to Katfeathers" aria-label="Reply to Katfeathers">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Hmmm, I wonder:is what Selach noticed a sign that further injury or boops might not be needed? I.E. Life herself is already hard at work.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>	<li id="comment-96058" class="comment even thread-odd thread-alt depth-1">
+	
+		<div class="comment-avatar"><img title="Jaq" alt='' src='https://secure.gravatar.com/avatar/a8d48c3edebbcbdcba4aa4fe28e79aed6ad0e190e13e1f7b6f6a643898dedb35?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/a8d48c3edebbcbdcba4aa4fe28e79aed6ad0e190e13e1f7b6f6a643898dedb35?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Jaq</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 11:12am">
+					September 10, 2025, 11:12 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96058" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96058#respond" data-commentid="96058" data-postid="4971" data-belowelement="comment-96058" data-respondelement="respond" data-replyto="Reply to Jaq" aria-label="Reply to Jaq">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Panels 7 &amp; 8 &#8211; Alinua hun, YOU are being hurt.  Her expression tears at my heart and makes me cry.</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>	<li id="comment-96061" class="comment odd alt thread-even depth-1">
+	
+		<div class="comment-avatar"><img title="Argon" alt='' src='https://secure.gravatar.com/avatar/b5da7fe0c680863fe6240ff3718cb96a11e398adb7e51d435c44dfc88a93acf1?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/b5da7fe0c680863fe6240ff3718cb96a11e398adb7e51d435c44dfc88a93acf1?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo instant nocorner itxtalt' height='64' width='64' decoding='async'/></div>		
+		<div class="comment-content">
+		
+			<div class="comment-author vcard">
+				<cite>Argon</cite>			</div>
+			
+			<div class="comment-meta-data">
+						
+				<span class="comment-time" title="Wednesday, September 10th 2025, 11:38am">
+					September 10, 2025, 11:38 am				</span>
+				
+				<span class="comment-permalink">
+					<span class="separator">|</span> <a href="#comment-96061" title="Permalink to comment">#</a>
+				</span>
+				
+				<span class="comment-reply-link"><span class="separator">|</span> <a rel="nofollow" class="comment-reply-link" href="https://comicaurora.com/aurora/2-5-32/?replytocom=96061#respond" data-commentid="96061" data-postid="4971" data-belowelement="comment-96061" data-respondelement="respond" data-replyto="Reply to Argon" aria-label="Reply to Argon">Reply</a></span>					
+				 
+				
+							
+			</div>
+
+							<div class="comment-text">
+					<p>Hang on, I just had a thought. Does Aliuna&#8217;s contact with the Wyrm withdraw the life energy from it?<br />
+Is that what caused the explosion, and why the Wyrm can&#8217;t heal where Alinua touched it?</p>
+				</div>
+									
+		</div>
+		
+		<div class="clear"></div>
+		
+</li>		</ol>
+	<div class="comment-wrapper-respond">
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Comment &not; <small><a rel="nofollow" id="cancel-comment-reply-link" href="/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://comicaurora.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><textarea id="comment" name="comment" class="comment-textarea"></textarea></p><p class="comment-form-author"><input id="author" name="author" type="text" value="" size="30" /> <label for="author"><small>*NAME</small></label></p>
+<p class="comment-form-email"><input id="email" name="email" type="text" value="" size="30" /> <label for="email">*EMAIL<small> &mdash; <a href="https://gravatar.com">Get a Gravatar</a></small></label></p>
+<p class="comment-form-url"><input id="url" name="url" type="text" value="" size="30" /> <label for="url">Website URL</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='4971' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+		</div>
+</div>
+<div id="blogheader"></div>								</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+		<footer id="footer">
+				<div id="footer-sidebar-wrapper">
+				</div>
+		<div class="clear"></div>
+		<div id="footer-menubar-wrapper">
+						<div class="clear"></div>
+		</div>
+		<p class="copyright-info">
+&copy;2019-2025 <a href="https://comicaurora.com">Aurora</a> <span class="footer-pipe">|</span> Powered by <a href="http://wordpress.org/">WordPress</a> with <a href="http://frumph.net">ComicPress</a>
+<span class="footer-subscribe"><span class="footer-pipe">|</span> Subscribe: <a href="https://comicaurora.com/feed/">RSS</a>
+</span>
+<span class="footer-uptotop"><span class="footer-pipe">|</span> <a href="" onclick="if (!window.__cfRLUnblockHandlers) return false; scrollup(); return false;" data-cf-modified-c21271b6d1f7f34869e5eabd-="">Back to Top &uarr;</a></span>
+</p>
+			</footer>	
+		</div> <!-- // #page -->
+</div> <!-- / #page-wrap -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/comicpress-child\/*","\/wp-content\/themes\/comicpress\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.1" id="swv-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" id="contact-form-7-js-before">
+/* <![CDATA[ */
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/comicaurora.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+/* ]]> */
+</script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.1" id="contact-form-7-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" id="Mgsisk\Webcomic\CollectionCommonJS-js-extra">
+/* <![CDATA[ */
+var webcomicCommonJS = {"ajaxurl":"https:\/\/comicaurora.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/plugins/webcomic/srv/collection/common.js?ver=5.0.8" id="Mgsisk\Webcomic\CollectionCommonJS-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/themes/comicpress/js/scroll.js" id="comicpress_scroll-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/themes/comicpress/js/cvi_text_lib.js" id="themetricks_historic1-js"></script>
+<script type="c21271b6d1f7f34869e5eabd-text/javascript" src="https://comicaurora.com/wp-content/themes/comicpress/js/instant.js" id="themetricks_historic2-js"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c21271b6d1f7f34869e5eabd-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"fee2481c3b074e04b94c068231a3899f","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.696 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2025-09-10 12:45:36 -->
+
+<!-- Dynamic Super Cache -->
+<!-- Compression = gzip -->
