@@ -1,36 +1,47 @@
 const fs = require("fs");
 const https = require("https");
+const Readable = require("stream").Readable;
 
 const url = "https://comicaurora.com/";
+let imageUrl;
+
+const auroraHTML = fs.createWriteStream("index.html");
 
 const request = https.request(url, (response) => {
     let data = "";
+
     response.on("data", (chunk) => {
-        data += chunk.toString();
+        data += chunk;
     });
 
     response.on("end", async function () {
-        // const body = JSON.parse(data);
-        // console.log(body);
-
         const lines = data.split("\n");
-        let imageEl;
 
         for (const line of lines) {
             if (line.includes('<div id="mgsisk_webcomic_collection_widget_webcomicmedia-5"')) {
-                imageEl = line;
+                line.split(" ").forEach((imageLink) => {
+                    if (imageLink.includes('src="https://comicaurora.com/wp-content/uploads/')) {
+                        imageUrl = imageLink.substring(5, imageLink.length - 1);
+
+                        // console.log(imageUrl);
+                    }
+                });
+                // console.log(line);
                 break;
             }
         }
 
-        // await pipeline(imageEl, file);
-        fs.writeFile("aurora.html", imageEl, (err) => {
-            if (err) {
-                console.error(`Error writing file: ${err}`);
-            } else {
-                console.log("File written successfully");
-            }
-        });
+        downloadImage(imageUrl);
+        // downloadImage("https://comicaurora.com/wp-content/uploads/2025/06/CH5_032_hurt.png");
+
+        let replacedData = data.replaceAll(imageUrl, "images/current-page.png");
+        let s = new Readable();
+
+        s.push(replacedData);
+        s.push(null);
+
+        s.pipe(auroraHTML);
+        console.log("HTML successful");
     });
 });
 
@@ -40,10 +51,8 @@ request.on("error", (error) => {
 
 request.end();
 
-// const imageUrl = "https://undertale.com/assets/images/stickers3.png";
-
 function downloadImage(imageUrl) {
-    const imageName = "images/sans.png";
+    const imageName = "images/current-page.png";
 
     const file = fs.createWriteStream(imageName);
 
