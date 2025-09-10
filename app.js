@@ -74,7 +74,7 @@ function downloadImage(imageUrl) {
 }
 
 function commit() {
-    shell.exec("update.sh");
+    shell.exec("update.sh"); // wait i need to test one more thing
 
     console.log("all done!");
 }
