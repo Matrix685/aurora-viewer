@@ -33,7 +33,6 @@ const request = https.request(url, (response) => {
         }
 
         downloadImage(imageUrl);
-        // downloadImage("https://comicaurora.com/wp-content/uploads/2025/06/CH5_032_hurt.png");
 
         let replacedData = data.replaceAll(imageUrl, "images/current-page.png");
         let s = new Readable();
