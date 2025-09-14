@@ -3,7 +3,7 @@ const https = require("https");
 const Readable = require("stream").Readable;
 const shell = require("shelljs");
 
-getComic(); // for testing
+// getComic(); // for testing
 
 function getComic() {
     const url = "https://comicaurora.com/";
@@ -102,9 +102,9 @@ let checkTime = setInterval(() => {
     // console.log("you do work right?");
     const time = new Date();
 
-    // console.log(time.getUTCHours().toString() + ":" + time.getUTCMinutes());
+    console.log(time.getHours().toString() + ":" + time.getMinutes());
 
-    if (time.getHours() == 9 && time.getMinutes() > 15) {
+    if (time.getHours() == 8 && time.getMinutes() > 15) {
         console.log("ITS OUUUUTT!!");
         getComic();
         clearInterval(checkTime);
