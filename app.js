@@ -107,12 +107,10 @@ function checkComic() {
     if (time.getHours() >= 8 && time.getMinutes() > 15) {
         console.log("ITS OUUUUTT!!");
         getComic();
+        clearInterval(checkTime);
     }
 }
 
-checkComic();
+let checkTime = setInterval(checkComic, 60000);
 
-let checkTime = setInterval(() => {
-    checkComic();
-    clearInterval(checkTime);
-}, 60000);
+checkComic();
