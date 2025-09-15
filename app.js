@@ -107,16 +107,13 @@ function checkComic() {
 
     let currentTime = time.getHours().toString() + ":" + time.getMinutes().toString();
 
-    fs.writeFile("codespace.txt", currentTime, (err) => {
-        if (err) console.error(err);
-        console.log("what the fuck man what the hell like what huuhh");
-    });
+    fs.writeFileSync("codespace.txt", currentTime);
 
-    // if (time.getHours() >= 8 && time.getMinutes() > 15) {
-    //     console.log("ITS OUUUUTT!!");
-    //     getComic();
-    //     clearInterval(checkTime);
-    // }
+    if (time.getHours() >= 8 && time.getMinutes() >= 15) {
+        console.log("ITS OUUUUTT!!");
+        getComic();
+        clearInterval(checkTime);
+    }
 }
 
 let checkTime = setInterval(checkComic, 60000);
