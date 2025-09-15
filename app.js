@@ -111,6 +111,6 @@ function checkComic() {
     }
 }
 
-let checkTime = setInterval(checkComic, 60000);
+let checkTime = setInterval(checkComic, 6000);
 
 checkComic();
