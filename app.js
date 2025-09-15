@@ -43,7 +43,10 @@ function getComic() {
                 .replaceAll("https://comicaurora.com/wp-content/uploads/2019/04/bg-aurora.png", "images/bg-aurora.png") // aurora background
                 .replaceAll("https://comicaurora.com/wp-content/uploads/2019/04/cropped-icon-32x32.png", "images/cropped-icon-32x32.png") // some icon idk
                 .replaceAll("https://comicaurora.com/wp-content/uploads/2019/04/header-wrap-small-alt.png", "images/header-wrap-small-alt.png") // vines in header
-                .replaceAll("https://comicaurora.com/wp-content/uploads/2019/04/arrow-blue-e1571699055192.png", "images/arrow-blue-e1571699055192.png") // double left arrow
+                .replaceAll(
+                    "https://comicaurora.com/wp-content/uploads/2019/04/arrow-blue-e1571699055192.png",
+                    "images/arrow-blue-e1571699055192.png"
+                ) // double left arrow
                 .replaceAll("https://comicaurora.com/wp-content/uploads/2019/04/arrow--e1571699115274.png", "images/arrow--e1571699115274.png") // single left arrow
                 .replaceAll("https://comicaurora.com/wp-content/uploads/2019/04/random-e1571699137392.png", "images/random-e1571699137392.png") // random page button
                 .replaceAll("https://comicaurora.com/wp-content/uploads/2019/04/arrow-1-1-e1571699098139.png", "images/arrow-1-1-e1571699098139.png") // single right arrow
@@ -102,15 +105,20 @@ function checkComic() {
     // console.log("you do work right?");
     const time = new Date();
 
-    console.log(time.getHours().toString() + ":" + time.getMinutes());
+    let currentTime = time.getHours().toString() + ":" + time.getMinutes().toString();
 
-    if (time.getHours() >= 8 && time.getMinutes() > 15) {
-        console.log("ITS OUUUUTT!!");
-        getComic();
-        clearInterval(checkTime);
-    }
+    fs.writeFile("codespace.txt", currentTime, (err) => {
+        if (err) console.error(err);
+        console.log("what the fuck man what the hell like what huuhh");
+    });
+
+    // if (time.getHours() >= 8 && time.getMinutes() > 15) {
+    //     console.log("ITS OUUUUTT!!");
+    //     getComic();
+    //     clearInterval(checkTime);
+    // }
 }
 
-let checkTime = setInterval(checkComic, 6000);
+let checkTime = setInterval(checkComic, 60000);
 
 checkComic();
