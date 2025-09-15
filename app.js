@@ -98,15 +98,21 @@ function commit() {
 
 console.log("Waiting for new comic");
 
-let checkTime = setInterval(() => {
+function checkComic() {
     // console.log("you do work right?");
     const time = new Date();
 
     console.log(time.getHours().toString() + ":" + time.getMinutes());
 
-    if (time.getHours() == 8 && time.getMinutes() > 15) {
+    if (time.getHours() >= 8 && time.getMinutes() > 15) {
         console.log("ITS OUUUUTT!!");
         getComic();
-        clearInterval(checkTime);
     }
+}
+
+checkComic();
+
+let checkTime = setInterval(() => {
+    checkComic();
+    clearInterval(checkTime);
 }, 60000);
