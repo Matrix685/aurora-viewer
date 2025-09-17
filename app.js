@@ -109,7 +109,7 @@ function checkComic() {
 
     fs.writeFileSync("codespace.txt", currentTime);
 
-    if (time.getHours() >= 8 && time.getMinutes() >= 15) {
+    if (time.getHours() == 8 && time.getMinutes() >= 15) {
         console.log("ITS OUUUUTT!!");
         getComic();
         clearInterval(checkTime);
