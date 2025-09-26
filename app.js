@@ -106,11 +106,10 @@ function checkComic() {
     const time = new Date();
 
     let currentTime = time.getHours().toString() + ":" + time.getMinutes().toString();
-
-    fs.writeFileSync("codespace.txt", currentTime);
+    
     console.log(currentTime);
 
-    if (time.getHours() >= 8 && time.getMinutes() >= 1) {
+    if (time.getHours() == 8 && time.getMinutes() >= 15) {
         console.log("ITS OUUUUTT!!");
         getComic();
         clearInterval(checkTime);
