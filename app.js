@@ -109,7 +109,7 @@ function checkComic() {
     
     console.log(currentTime);
 
-    if (time.getHours() == 8 && time.getMinutes() >= 15) {
+    if (time.getHours() == 9 && time.getMinutes() >= 15) {
         console.log("ITS OUUUUTT!!");
         getComic();
         clearInterval(checkTime);
